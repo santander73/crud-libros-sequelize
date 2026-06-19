@@ -1,0 +1,38 @@
+### Configuración de Variables Globales
+@api = http://localhost:3000/libros
+
+### 1. Obtener todos los libros (GET)
+GET {{api}}
+
+###
+
+### 2. Crear un nuevo libro (POST)
+POST {{api}}
+Content-Type: application/json
+
+{
+    "titulo": "El Aleph",
+    "genero": "Ficción",
+    "autor": "Jorge Luis Borges"
+}
+
+###
+
+### 3. Obtener un libro por su ID (GET)
+GET {{api}}/5
+
+###
+
+### 4. Actualizar un libro por su ID (PUT)
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "titulo": "Ficciones",
+    "genero": "Literatura Fantástica"
+}
+
+###
+
+### 5. Eliminar un libro por su ID (DELETE)
+DELETE {{api}}/1
